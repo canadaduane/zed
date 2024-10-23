@@ -27,6 +27,7 @@ test-support = [
 ]
 
 [dependencies]
+anyhow.workspace = true
 auto_update.workspace = true
 call.workspace = true
 client.workspace = true
@@ -37,6 +38,7 @@ project.workspace = true
 remote.workspace = true
 rpc.workspace = true
 serde.workspace = true
+settings.workspace = true
 smallvec.workspace = true
 story = { workspace = true, optional = true }
 theme.workspace = true
