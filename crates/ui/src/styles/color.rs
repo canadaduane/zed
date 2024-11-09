@@ -10,6 +10,8 @@ pub enum Color {
     ///
     /// For less emphasis, consider using [`Color::Muted`] or [`Color::Hidden`].
     Default,
+    /// A color used for text in the project panel, such as file names
+    PanelText,
     /// A text color used for accents, such as links or highlights.
     Accent,
     /// A color used to indicate a conflict, such as a version control merge conflict, or a conflict between a file in the editor and the file system.
@@ -65,6 +67,7 @@ impl Color {
     pub fn color(&self, cx: &WindowContext) -> Hsla {
         match self {
             Color::Default => cx.theme().colors().text,
+            Color::PanelText => cx.theme().colors().panel_text,
             Color::Muted => cx.theme().colors().text_muted,
             Color::Created => cx.theme().status().created,
             Color::Modified => cx.theme().status().modified,
