@@ -316,6 +316,9 @@ pub struct ThemeColorsContent {
     #[serde(rename = "search.match_background")]
     pub search_match_background: Option<String>,
 
+    #[serde(rename = "panel.text")]
+    pub panel_text: Option<String>,
+
     #[serde(rename = "panel.background")]
     pub panel_background: Option<String>,
 
@@ -709,6 +712,10 @@ impl ThemeColorsContent {
                 .and_then(|color| try_parse_color(color).ok()),
             search_match_background: self
                 .search_match_background
+                .as_ref()
+                .and_then(|color| try_parse_color(color).ok()),
+            panel_text: self
+                .panel_text
                 .as_ref()
                 .and_then(|color| try_parse_color(color).ok()),
             panel_background: self

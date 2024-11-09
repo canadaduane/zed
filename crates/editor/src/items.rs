@@ -1526,7 +1526,7 @@ pub fn entry_label_color(selected: bool) -> Color {
     if selected {
         Color::Default
     } else {
-        Color::Muted
+        Color::PanelText
     }
 }
 

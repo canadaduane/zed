@@ -123,6 +123,7 @@ pub struct ThemeColors {
     pub tab_inactive_background: Hsla,
     pub tab_active_background: Hsla,
     pub search_match_background: Hsla,
+    pub panel_text: Hsla,
     pub panel_background: Hsla,
     pub panel_focused_border: Hsla,
     pub panel_indent_guide: Hsla,
