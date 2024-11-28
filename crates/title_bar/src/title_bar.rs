@@ -19,7 +19,6 @@ use gpui::{
 };
 use project::{Project, RepositoryEntry};
 use rpc::proto;
-use recent_projects::{OpenRemote, RecentProjects};
 use smallvec::SmallVec;
 use std::sync::Arc;
 use theme::ActiveTheme;
